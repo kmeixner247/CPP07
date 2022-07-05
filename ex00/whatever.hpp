@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 22:00:52 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/07/05 22:07:48 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/07/05 22:11:05 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void swap(T &x, T &y)
 	x = y;
 	y = tmp;
 }
+
 template<typename T>
 T const &min(T const &x, T const &y)
 {

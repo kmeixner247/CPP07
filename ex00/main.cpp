@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 22:00:55 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/07/05 22:07:53 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/07/05 22:13:01 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,11 @@ int main()
 	std::cout << "c = " << c << ", d = " << d << std::endl;
 	std::cout << "min(c, d) = " << ::min(c, d) << std::endl;
 	std::cout << "max(c, d) = " << ::max(c, d) << std::endl;
+	float f1 = 42.42f;
+	float f2 = 69.420f;
+	::swap(f1, f2);
+	std::cout << "f1 = " << f1 << ", f2 = " << f2 << std::endl;
+	std::cout << "min(f1, f2) = " << ::min(f1, f2) << std::endl;
+	std::cout << "max(f1, f2) = " << ::max(f1, f2) << std::endl;
 	return 0;
 }
