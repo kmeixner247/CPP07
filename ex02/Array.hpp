@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 23:05:32 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/07/06 10:47:04 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/07/06 11:00:34 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ public:
 		return this->_content[index];
 	}
 	class IndexOutOfBoundsException : public std::exception {
-		const char *what() const throw() {return ("Index out of bounds");}
+		const char *what() const throw() {return ("Index out of bounds exception!");}
 	};
 	~Array() {delete[] (this->_content);}
 	size_t size() {return (this->_size);}

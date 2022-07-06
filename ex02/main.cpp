@@ -35,6 +35,43 @@ int main()
 	std::cout << "Printing d" << std::endl;
 	for (size_t i = 0; i < d.size(); i++)
 		std::cout << d[i] << " ";
-	std::cout << std::endl;
-
+	std::cout << std::endl << std::endl;
+	try
+	{
+		std::cout << "Trying to access a[11]" << std::endl;
+		std::cout << a[11] << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	try
+	{
+		std::cout << "Trying to access s[101]" << std::endl;
+		std::cout << d[101] << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	try
+	{
+		std::cout << "Trying to access d[-1]" << std::endl;
+		std::cout << d[-1] << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	std::cout << "declaring empty float array f" << std::endl;
+	Array<float> f;
+	try
+	{
+		std::cout << "Trying to access f[0]" << std::endl;
+		std::cout << f[0] << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 }
